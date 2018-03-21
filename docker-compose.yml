@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  netcore-dockersample:
+    image: ${DOCKER_REGISTRY}netcoredockersample
+    build:
+      context: .
+      dockerfile: NetCore-DockerSample/Dockerfile
